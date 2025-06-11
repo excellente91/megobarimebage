@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>გალერეა — მეგობარი მებაღე</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+<link rel="stylesheet" href="style.css" />
+
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img,
+    .gallery video {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="container-fluid nav-wrap">
+  <ul class="nav-logo">
+    <li><strong><a href="index.html" style="text-decoration: none; color: inherit;">მეგობარი მებაღე</a></strong></li>
+  </ul>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <label for="nav-toggle" class="nav-icon">&#9776;</label>
+
+  <ul class="nav-links">
+    <li><a href="contact.html" role="button">კონტაქტი</a></li>
+    <li><a href="about.html" role="button">ჩვენს შესახებ</a></li>
+    <li><a href="gallery.html" role="button" class="active">გალერეა</a></li>
+    <li><a href="services.html" role="button">სერვისები</a></li>
+  </ul>
+</nav>
+
+
+<main class="container">
+  <div class="grid">
+    <section>
+      <hgroup>
+        <h2>გალერეა</h2>
+        <h3>ჩვენი სამუშაოს შთამბეჭდავი შედეგები</h3>
+      </hgroup>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1616401785717-bcc6ef6d53b2" alt="Garden path" />
+        <img src="https://images.unsplash.com/photo-1598515214303-22650994b60a" alt="Freshly planted garden" />
+        <img src="https://images.unsplash.com/photo-1622560489737-4aeb1530d274" alt="Trimming hedges" />
+        <video controls muted>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს.
+        </video>
+      </div>
+
+      <div class="grid">
+  <a href="index.html" role="button">დაბრუნება მთავარზე</a>
+  <a href="about.html" role="button" class="secondary">გაიგეთ მეტი ჩვენზე</a>
+  <a href="services.html" role="button" class="secondary">ნახეთ ჩვენი სერვისები</a>
+  <a href="contact.html" role="button" class="secondary">დაგვიკავშირდით</a>
+</div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="container">
+  <small>
+    <a href="#">Privacy Policy</a> • <a href="#">Terms</a>
+  </small>
+</footer>
+
+</body>
+</html>

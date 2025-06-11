@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>სერვისები — მეგობარი მებაღე</title>
+  <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      background: #ffffff;
+      border: 1px solid #d9e7db;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+    }
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      color: #3d6e4d;
+    }
+    .service-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .service-description {
+      font-size: 0.95rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="container-fluid nav-wrap">
+  <ul class="nav-logo">
+    <li><strong><a href="index.html" style="text-decoration: none; color: inherit;">მეგობარი მებაღე</a></strong></li>
+  </ul>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <label for="nav-toggle" class="nav-icon">&#9776;</label>
+
+  <ul class="nav-links">
+    <li><a href="contact.html" role="button">კონტაქტი</a></li>
+    <li><a href="about.html" role="button">ჩვენს შესახებ</a></li>
+    <li><a href="gallery.html" role="button">გალერეა</a></li>
+    <li><a href="services.html" role="button" class="active">სერვისები</a></li>
+  </ul>
+</nav>
+
+
+<main class="container">
+  <section>
+    <hgroup>
+      <h2>სერვისები</h2>
+      <h3>ყველაფერი თქვენი ეზოსთვის — პროფესიონალურად და სიყვარულით</h3>
+    </hgroup>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-title">ლანდშაფტის დიზაინი</div>
+        <div class="service-description">შევქმნით უნიკალურ დიზაინს, რომელიც შეესაბამება თქვენს გემოვნებას და სივრცეს.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🌱</div>
+        <div class="service-title">მცენარეების დარგვა</div>
+        <div class="service-description">დაგეხმარებით მცენარეთა შერჩევაში და სწორად განლაგებაში კლიმატის მიხედვით.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">✂️</div>
+        <div class="service-title">ბალახის მოწესრიგება</div>
+        <div class="service-description">დავჭრით, მოვრწყავთ და გავანოყიერებთ თქვენს ბალახს, როგორც პროფესიონალები.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🧹</div>
+        <div class="service-title">ეზოს სეზონური წმენდა</div>
+        <div class="service-description">წინასწარ მოვამზადებთ თქვენს ეზოს გაზაფხულისა და შემოდგომისთვის.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💧</div>
+        <div class="service-title">მორწყვის სისტემები</div>
+        <div class="service-description">დავაყენებთ თანამედროვე წვეთოვან მორწყვის სისტემებს და გაგიწევთ ტექნიკურ მომსახურებას.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛠️</div>
+        <div class="service-title">პერიოდული მოვლა</div>
+        <div class="service-description">გთავაზობთ პერიოდულ ვიზიტებს თქვენი სივრცის მოვლისა და გაწმედისთვის.</div>
+      </div>
+    </div>
+
+    <!-- 🔗 Переходы -->
+    <div class="grid" style="margin-top: 3rem;">
+      <a href="index.html" role="button">დაბრუნება მთავარზე</a>
+      <a href="about.html" role="button" class="secondary">გაიგეთ მეტი ჩვენზე</a>
+      <a href="gallery.html" role="button" class="secondary">დაათვალიერეთ გალერეა</a>
+      <a href="contact.html" role="button" class="secondary">დაგვიკავშირდით</a>
+    </div>
+  </section>
+</main>
+
+<footer class="container">
+  <small><a href="#">Privacy Policy</a> • <a href="#">Terms</a></small>
+</footer>
+
+</body>
+</html>

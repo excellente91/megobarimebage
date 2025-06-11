@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>კონტაქტი — მეგობარი მებაღე</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+<link rel="stylesheet" href="style.css" />
+
+  <style>
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="container-fluid nav-wrap">
+  <ul class="nav-logo">
+    <li><strong><a href="index.html" style="text-decoration: none; color: inherit;">მეგობარი მებაღე</a></strong></li>
+  </ul>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <label for="nav-toggle" class="nav-icon">&#9776;</label>
+
+  <ul class="nav-links">
+    <li><a href="contact.html" role="button" class="active">კონტაქტი</a></li>
+    <li><a href="about.html" role="button">ჩვენს შესახებ</a></li>
+    <li><a href="gallery.html" role="button">გალერეა</a></li>
+    <li><a href="services.html" role="button">სერვისები</a></li>
+  </ul>
+</nav>
+
+
+<main class="container">
+  <div class="grid">
+    <section>
+      <hgroup>
+        <h2>დაგვიკავშირდით</h2>
+        <h3>ჩვენი გუნდი მზად არის თქვენს დახმარებისთვის</h3>
+      </hgroup>
+
+      <p>გაქვთ შეკითხვა ან გსურთ შეათანხმოთ ვიზიტი? შეავსეთ ფორმა ან დაგვიკავშირდით პირდაპირ:</p>
+
+      <ul>
+        <li><strong>ტელეფონი:</strong> +995 599 12 34 56</li>
+        <li><strong>ელ. ფოსტა:</strong> info@mebage.ge</li>
+        <li><strong>მისამართი:</strong> თბილისი, საქართველო</li>
+      </ul>
+
+      <form class="grid">
+        <input type="text" name="name" placeholder="სახელი" required />
+        <input type="email" name="email" placeholder="ელ. ფოსტა" required />
+        <textarea name="message" placeholder="შეტყობინება" required></textarea>
+        <button type="submit" onclick="event.preventDefault()">გაგზავნა</button>
+      </form>
+
+      <h3>ჩვენი მდებარეობა</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.927618848067!2d44.79301011539052!3d41.71513797923453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd854f6af4f%3A0x3efb4d4ed2c8b3f9!2sTbilisi!5e0!3m2!1sen!2sge!4v1620000000000" allowfullscreen></iframe>
+
+      <div class="grid">
+  <a href="index.html" role="button">დაბრუნება მთავარზე</a>
+  <a href="about.html" role="button" class="secondary">გაიგეთ მეტი ჩვენზე</a>
+  <a href="services.html" role="button" class="secondary">ნახეთ ჩვენი სერვისები</a>
+  <a href="gallery.html" role="button" class="secondary">დაათვალიერეთ გალერეა</a>
+</div>
+
+    </section>
+  </div>
+</main>
+
+<footer class="container">
+  <small>
+    <a href="#">Privacy Policy</a> • <a href="#">Terms</a>
+  </small>
+</footer>
+
+</body>
+</html>
